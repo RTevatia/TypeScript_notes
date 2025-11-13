@@ -4,6 +4,7 @@ class Account {
     id;
     owner;
     balance;
+    nickname; //Optional property
     constructor(id, owner, balance) {
         this.id = id;
         this.owner = owner;
