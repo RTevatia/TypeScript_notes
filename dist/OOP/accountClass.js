@@ -4,11 +4,17 @@ class Account {
     id;
     owner;
     _balance;
+    // readonly id: number;
+    // owner: string;
+    // private _balance: number;
     nickname; //Optional property
-    constructor(id, owner, balance) {
+    constructor(id, owner, _balance) {
         this.id = id;
         this.owner = owner;
-        this._balance = balance;
+        this._balance = _balance;
+        // this.id = id;
+        // this.owner = owner;
+        // this._balance = balance;
     }
     deposit(amount) {
         if (amount <= 0)
