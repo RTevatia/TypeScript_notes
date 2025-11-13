@@ -27,5 +27,4 @@ class Account {
 let account = new Account(1, "Marsh", 0);
 account.deposit(100);
 console.log(account.balance);
-account.balance = -1; // setter throw error
-console.log(account.balance); 
+
