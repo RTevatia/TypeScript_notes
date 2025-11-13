@@ -1,35 +1,31 @@
 class Account {
-    // readonly id: number;
-    // owner: string;
-    // private _balance: number;
-    nickname?: string; //Optional property
+  nickname?: string;
 
-    constructor(
-        public readonly id: number, 
-        public owner: string, 
-        private _balance: number) {
-        // this.id = id;
-        // this.owner = owner;
-        // this._balance = balance;
-    }
+  constructor(
+    public readonly id: number,
+    public owner: string,
+    private _balance: number
+  ) {}
 
-    deposit(amount: number): void {
-        if (amount <= 0)
-            throw new Error("Invalid amount.");
-        this._balance += amount;
-    }
+  deposit(amount: number): void {
+    if (amount <= 0) throw new Error("Invalid amount.");
+    this._balance += amount;
+  }
 
-    getBalance() {
-        return this._balance;
-    }
+  // balance getter
+  get balance() {
+    return this._balance;
+  }
 
-    // Make method private
-    // private calculateTax(): number {
-    //     return this._balance *0.1 // some calculate tax logic
-    // }
+  // balance setter
+  set balance(value: number) {
+    if (value < 0) throw new Error("Invalid input");
+    this._balance = value;
+  }
 }
 
-let account = new Account(1, 'Marsh', 0);
+let account = new Account(1, "Marsh", 0);
 account.deposit(100);
-// console.log(account._balance); // not accessible as it is private
-console.log(account.getBalance());
+console.log(account.balance);
+account.balance = -1; // setter throw error
+console.log(account.balance); 
