@@ -24,6 +24,13 @@ class Student extends Person {
         console.log("Taking Test");
     }
 }
+class Teacher extends Person {
+    get fullName() {
+        return "Professor " + super.fullName;
+    }
+}
 let student = new Student(1, "John", "Smith");
 student.walk();
+let teacher = new Teacher("John", "Smith");
+console.log(teacher.fullName);
 //# sourceMappingURL=inheritance.js.map
