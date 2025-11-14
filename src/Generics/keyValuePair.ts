@@ -1,22 +1,15 @@
-class KeyValuePair {
-    constructor(public key: number, public value: string) {}
+// Generic key
+// class KeyValuePair<T> {
+//     constructor(public key: T, public value: string) {}
+// }
+
+// let pair = new KeyValuePair<string>('1', 'Apple');
+// pair.value
+
+
+class KeyValuePair<K, V> {
+    constructor(public key: K, public value: V) {}
 }
 
-let pair = new KeyValuePair(1, 'Apple');
+let pair = new KeyValuePair<string, string>('1', 'Apple');
 pair.value
-
-// Later if we need key to be string 
-// one solution is to to use 'any' 
-// but 'any' removes type safety and IntelliSense 
-
-// Second solution is to create entirely new class 
-// Redundant Duplicate class
-
-class StringKeyValuePair {
-    constructor(public key: string, public value: string) {}
-}
-
-let pair2 = new StringKeyValuePair('1', 'Apple');
-pair2.value
-
-// Third solution is to use Generics
