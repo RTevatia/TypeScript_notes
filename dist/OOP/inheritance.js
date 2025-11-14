@@ -29,8 +29,18 @@ class Teacher extends Person {
         return "Professor " + super.fullName;
     }
 }
-let student = new Student(1, "John", "Smith");
-student.walk();
-let teacher = new Teacher("John", "Smith");
-console.log(teacher.fullName);
+class Principal extends Person {
+    get fullName() {
+        return "Principal " + super.fullName;
+    }
+}
+printName([
+    new Student(1, "John", "Smith"),
+    new Teacher("Josh", "Yeroshfsky"),
+    new Principal("Mary", "Jane"),
+]);
+function printName(people) {
+    for (let person of people)
+        console.log(person.fullName);
+}
 //# sourceMappingURL=inheritance.js.map
