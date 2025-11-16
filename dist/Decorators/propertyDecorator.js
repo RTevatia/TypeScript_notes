@@ -31,6 +31,6 @@ class User {
 __decorate([
     MinLength(4)
 ], User.prototype, "password", void 0);
-const user = new User("1");
+const user = new User("1234");
 console.log(user.password);
 //# sourceMappingURL=propertyDecorator.js.map
