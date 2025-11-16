@@ -16,6 +16,9 @@
     // and npm install -D @types/node
     "experimentalDecorators": true,
     "moduleResolution": "node",
+
+    /* JavaScript Support */
+    "allowJs": true,
     
 
     // Other Outputs
