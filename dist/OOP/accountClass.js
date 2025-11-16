@@ -1,10 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 class Account {
-    id;
-    owner;
-    _balance;
-    nickname;
     constructor(id, owner, _balance) {
         this.id = id;
         this.owner = owner;
@@ -29,4 +23,5 @@ class Account {
 let account = new Account(1, "Marsh", 0);
 account.deposit(100);
 console.log(account.balance);
+export {};
 //# sourceMappingURL=accountClass.js.map

@@ -1,8 +1,6 @@
-"use strict";
 // const small = 1;
 // const medium = 2;
 // const large = 3;
-Object.defineProperty(exports, "__esModule", { value: true });
 // Enums (Pascal case)
 // enum Size {
 //   Small,
@@ -31,4 +29,5 @@ var Size;
 })(Size || (Size = {}));
 const size = Size.Small;
 console.log(size);
+export {};
 //# sourceMappingURL=enums.js.map

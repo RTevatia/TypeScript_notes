@@ -1,7 +1,7 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 class Store {
-    _objects = [];
+    constructor() {
+        this._objects = [];
+    }
     add(obj) {
         this._objects.push(obj);
     }
@@ -13,5 +13,6 @@ const store = new Store();
 store.add({ name: "A", price: 10 });
 console.log(store.find("name", 'A')); // valid
 console.log(store.find("price", 1)); // valid
+export {};
 // console.log(store.find("category", 'A')); // Invalid
 //# sourceMappingURL=keyofOperator.js.map

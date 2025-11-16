@@ -1,8 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 class Person {
-    firstName;
-    lastName;
     constructor(firstName, lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -15,7 +11,6 @@ class Person {
     }
 }
 class Student extends Person {
-    studentId;
     constructor(studentId, firstName, lastName) {
         super(firstName, lastName);
         this.studentId = studentId;
@@ -43,4 +38,5 @@ function printName(people) {
     for (let person of people)
         console.log(person.fullName);
 }
+export {};
 //# sourceMappingURL=inheritance.js.map

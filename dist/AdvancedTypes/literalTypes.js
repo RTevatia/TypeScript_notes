@@ -1,6 +1,4 @@
-"use strict";
 // let quant: 50;
-Object.defineProperty(exports, "__esModule", { value: true });
 // quant = 50; // Valid
 // quant = 51; // Error: Type '51' is not assignable to type '50'
 // Combine multiple literals using a Union type
@@ -17,4 +15,5 @@ let length = "cm"; // Valid
 length = "inch"; // Valid
 // let length: Metric = "meters"; // Error
 console.log(length);
+export {};
 //# sourceMappingURL=literalTypes.js.map

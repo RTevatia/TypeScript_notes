@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 let textBox = {
     drag: () => {
         console.log("Dragging...");
@@ -10,4 +8,5 @@ let textBox = {
 };
 textBox.drag();
 textBox.resize();
+export {};
 //# sourceMappingURL=intersectionTypes.js.map

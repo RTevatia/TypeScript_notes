@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 class Ride {
-    static _activeRides = 0;
     start() { Ride._activeRides++; }
     ;
     stop() { Ride._activeRides--; }
@@ -10,9 +7,11 @@ class Ride {
         return Ride._activeRides;
     }
 }
+Ride._activeRides = 0;
 let ride1 = new Ride();
 ride1.start();
 let ride2 = new Ride();
 ride2.start();
 console.log(Ride.activeRides);
+export {};
 //# sourceMappingURL=staticMembers.js.map

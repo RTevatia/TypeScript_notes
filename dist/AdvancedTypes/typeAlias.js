@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 let employee = {
     id: 1,
     name: "John",
@@ -8,4 +6,5 @@ let employee = {
     },
 };
 employee.retire(new Date());
+export {};
 //# sourceMappingURL=typeAlias.js.map

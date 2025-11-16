@@ -1,10 +1,9 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const p = {
     name: "Book",
     price: 20,
 };
 console.log(p.name);
+export {};
 // p.name = "Pen" // Compilation error
 // Common types
 // type ReadOnly<T> = {

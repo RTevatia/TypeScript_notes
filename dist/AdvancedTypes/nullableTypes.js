@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 function greet(name) {
     if (name)
         console.log(name.toUpperCase());
@@ -7,4 +5,5 @@ function greet(name) {
         console.log('Hola!');
 }
 greet(null);
+export {};
 //# sourceMappingURL=nullableTypes.js.map

@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 //  Standalone generic functions
 function wrapInArray(value) {
     return [value];
@@ -20,4 +18,5 @@ class ArrayUtilsStatic {
     }
 }
 console.log(ArrayUtilsStatic.wrapInArray("1"));
+export {};
 //# sourceMappingURL=genericFunctions.js.map

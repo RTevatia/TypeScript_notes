@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 class GoogleCalendar {
-    name;
     constructor(name) {
         this.name = name;
     }
@@ -14,4 +11,5 @@ class GoogleCalendar {
 }
 let calender = new GoogleCalendar("Meeting");
 calender.addEvent();
+export {};
 //# sourceMappingURL=interfaces.js.map

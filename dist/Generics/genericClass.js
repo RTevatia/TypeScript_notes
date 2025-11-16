@@ -1,7 +1,7 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 class Store {
-    _objects = [];
+    constructor() {
+        this._objects = [];
+    }
     add(obj) {
         this._objects.push(obj);
     }
@@ -44,4 +44,5 @@ class ProductStore extends Store {
 }
 let productStore = new ProductStore();
 productStore.filterByCatergory("electronics");
+export {};
 //# sourceMappingURL=genericClass.js.map

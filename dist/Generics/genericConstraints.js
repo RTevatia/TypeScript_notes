@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 // Define a generic echo function
 function echo(value) {
     return value;
@@ -24,7 +22,6 @@ let result2 = echoInterface({ name: 'efg' });
 console.log(result2.name);
 // Generic constrait with class
 class Person {
-    name;
     constructor(name) {
         this.name = name;
     }
@@ -38,4 +35,5 @@ let result3 = echoClass(new Person('xyz'));
 console.log(result3.name);
 let result4 = echoClass(new Customer('a1b1c1'));
 console.log(result4.name);
+export {};
 //# sourceMappingURL=genericConstraints.js.map

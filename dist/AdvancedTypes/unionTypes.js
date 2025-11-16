@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 function convertWeight(weight) {
     if (typeof weight === "number")
         return weight * 2.2;
@@ -7,4 +5,5 @@ function convertWeight(weight) {
 }
 console.log(convertWeight(70));
 console.log(convertWeight("70kg"));
+export {};
 //# sourceMappingURL=unionTypes.js.map
