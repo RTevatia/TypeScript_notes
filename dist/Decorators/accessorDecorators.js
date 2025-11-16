@@ -1,0 +1,35 @@
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+function Capitalize(target, methodName, descriptor) {
+    const original = descriptor.get;
+    descriptor.get = function () {
+        const result = original?.call(this);
+        return typeof result === "string" ? result.toUpperCase() : result;
+    };
+}
+class Person {
+    firstName;
+    lastName;
+    constructor(firstName, lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+    get fullName() {
+        return `${this.firstName} ${this.lastName}`;
+        // Check edge cases
+        // return 0;
+        // return null;
+    }
+}
+__decorate([
+    Capitalize
+], Person.prototype, "fullName", null);
+const person = new Person("john", "smith");
+console.log(person.fullName);
+//# sourceMappingURL=accessorDecorators.js.map
