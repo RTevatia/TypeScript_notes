@@ -1,8 +1,3 @@
-/**
- * Calculates income tax.
- * @param { number } number - Net salary after expenses.
- * @returns { number }
- */
-export function calculateTax(number) {
-    return number * 0.3;
+export function calculateTax(income) {
+  return income * 0.3;
 }

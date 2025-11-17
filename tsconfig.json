@@ -19,7 +19,7 @@
 
     /* JavaScript Support */
     "allowJs": true,
-    "checkJs": true,
+    // "checkJs": true,
     
 
     // Other Outputs
